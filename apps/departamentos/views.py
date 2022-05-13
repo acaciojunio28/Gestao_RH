@@ -1,7 +1,8 @@
 from django.contrib.auth.models import User
 from django.views.generic import ListView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView,UpdateView
 from .models import departamento
+
 
 class DepartamentosList(ListView):
     model = departamento
@@ -22,3 +23,10 @@ class DepartamentosCreate(CreateView):
         return super(DepartamentosCreate, self).form_valid(form)
 
     success_url = "/departamento/"
+
+
+class DepartamentosUpdate(UpdateView):
+    model = departamento
+    fields = ['nome']
+    success_url = "/departamento/"
+

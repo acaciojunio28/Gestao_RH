@@ -5,7 +5,7 @@
     list<hr>
   {% for departamento in object_list %}
 
-   <a href="">{{departamento}}</a>
+   <a href="{% url 'DepartamentosUpdate' departamento.id %}">{{departamento}}</a>
     <a href="">Deletar</a> <hr>
 
   {% endfor %}
