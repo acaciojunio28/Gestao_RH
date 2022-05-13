@@ -8,5 +8,5 @@ urlpatterns = [
     path('', DepartamentosList.as_view(), name='DepartamentoList'),
     path('novo', DepartamentosCreate.as_view(), name='DepartamentosCreate'),
     path('update/<int:pk>/', DepartamentosUpdate.as_view(), name='DepartamentosUpdate'),
-    path('delete/<int:pk>/', DepartamentosDelete.as_view(), name='DepartamentosDelete '),
+    path('delete/<int:pk>/', DepartamentosDelete.as_view(), name='DepartamentosDelete'),
 ]
