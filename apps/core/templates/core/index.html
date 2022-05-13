@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+
+{%block main%}
+
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+      Olá {{usuario.empregados.nome}}
+    <a href="{%url 'EmpregadoList'%}">Gerenciar funcionario</a>
+    <a href="{%url 'DepartamentoList'%}">Gerenciar Departamento</a>
+      {%if usuario.empregados.empresa%}
+      <a href="{% url 'EmpresaEdit' usuario.empregados.empresa.id %}">Editar Empresa</a>
+      {%else%}
+       <a href="{% url 'EmpresaCreate'%}">Criar Empresa</a>
+      {%endif%}
+    </div>
+    <div class="col">
+      <a href="{% url 'logout' %}">Sair</a>
+    </div>
+  </div>
+
+{%endblock%}

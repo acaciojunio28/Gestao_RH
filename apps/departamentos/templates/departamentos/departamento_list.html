@@ -1,0 +1,15 @@
+{% extends 'page.html' %}
+
+
+{% block main %}
+    list<hr>
+  {% for departamento in object_list %}
+
+   <a href="">{{departamento}}</a>
+    <a href="">Deletar</a> <hr>
+
+  {% endfor %}
+
+<a href="{% url 'DepartamentosCreate' %}">Criar departamento</a>
+
+{% endblock %}

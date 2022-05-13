@@ -1,0 +1,14 @@
+{% extends "page.html" %}
+
+{%block main%}
+List<br>
+{%for empregado in object_list %}<hr>
+
+<a href="{%url 'EmpregadoEdit' empregado.id %}"> {{empregado}}</a>
+<a href="{%url 'EmpregadoDelet' empregado.id %}">deletar</a>
+
+{%endfor%}
+<hr>
+<a href="{% url 'EmpregadoCreate'%}">Criar Funcionario</a>
+
+{%endblock%}
