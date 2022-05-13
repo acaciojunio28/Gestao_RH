@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.views.generic import ListView
-from django.views.generic.edit import CreateView,UpdateView
+from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from .models import departamento
 
 
@@ -30,3 +30,7 @@ class DepartamentosUpdate(UpdateView):
     fields = ['nome']
     success_url = "/departamento/"
 
+class DepartamentosDelete(DeleteView):
+    model = departamento
+    fields = ['nome']
+    success_url = "/departamento/"
