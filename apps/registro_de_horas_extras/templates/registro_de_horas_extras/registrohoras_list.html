@@ -8,6 +8,10 @@ Banco de horas<br>
 <a href="{%url 'HorasextraDelete' horas.id %}">deletar</a>
 
 {%endfor%}
-<hr>
 
+<hr>
+    {% if not object_list %}
+        Não existem registros de hora extra.
+    {% endif %}
+<a href="{% url 'HorasextraCreate'%}">Cadastrar horas</a>
 {%endblock%}
