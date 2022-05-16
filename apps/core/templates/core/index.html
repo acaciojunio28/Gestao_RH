@@ -10,6 +10,7 @@
       Olá {{usuario.empregados.nome}}
     <a href="{%url 'EmpregadoList'%}">Gerenciar funcionario</a>
     <a href="{%url 'DepartamentoList'%}">Gerenciar Departamento</a>
+    <a href="{%url 'HorasextraList'%}">Gerenciar Horas Extras</a>
       {%if usuario.empregados.empresa%}
       <a href="{% url 'EmpresaEdit' usuario.empregados.empresa.id %}">Editar Empresa</a>
       {%else%}

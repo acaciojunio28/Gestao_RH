@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff14529-e0e1-434e-94cb-08f118950df3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/documentos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/documentos/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/documentos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/documentos/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/empregados/templates/empregados/empregados_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/empregados/templates/empregados/empregados_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao_rh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_rh/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/core/templates/core/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/registro_de_horas_extras/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/registro_de_horas_extras/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/registro_de_horas_extras/templates/registro_de_horas_extras/registrohoras_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/registro_de_horas_extras/templates/registro_de_horas_extras/registrohoras_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/registro_de_horas_extras/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/registro_de_horas_extras/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestao_rh/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestao_rh/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

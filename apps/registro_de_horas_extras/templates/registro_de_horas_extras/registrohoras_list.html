@@ -1,0 +1,13 @@
+{% extends "page.html" %}
+
+{%block main%}
+Banco de horas<br>
+{%for horas in object_list %}<hr>
+
+<a href="{%url 'HorasextraEdit' horas.id %}"> {{horas}}</a>
+<a href="{%url 'HorasextraDelete' horas.id %}">deletar</a>
+
+{%endfor%}
+<hr>
+
+{%endblock%}

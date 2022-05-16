@@ -26,6 +26,7 @@ urlpatterns = [
     path('empresa/', include('apps.empresas.url')),
     path('departamento/', include('apps.departamentos.url')),
     path('documento/', include('apps.documentos.url')),
+    path('horas/', include('apps.registro_de_horas_extras.url')),
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
