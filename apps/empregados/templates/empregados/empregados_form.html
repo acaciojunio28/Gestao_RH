@@ -9,4 +9,17 @@
 <button type="submit" class="btn btn-primary">Salvar</button>
 
 </form>
+<br>
+    <h3>Documentos</h3>
+<ul>
+    {% for documentos in object.documentos_set.all %}
+
+        <li>
+            <a href="{{documentos.arquivo.url }}">{{documentos.descricao}}</a>
+        </li>
+    {% endfor %}
+    </ul>
+    {% if object %}
+        <a href="{% url 'DocumentosCreate' object.id %}" class="btn btn-success">Adicionar documento</a>
+    {% endif %}
 {%endblock%}
