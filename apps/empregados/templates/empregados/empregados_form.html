@@ -22,4 +22,18 @@
     {% if object %}
         <a href="{% url 'DocumentosCreate' object.id %}" class="btn btn-success">Adicionar documento</a>
     {% endif %}
+  <h3>Banco de horas</h3>
+    <ul>
+    {% for registro_hora in object.registrohoras_set.all %}
+
+        <li>
+           <a href="">
+               {{registro_hora.motivo}} | {{registro_hora.horas}}
+           </a>
+        </li>
+    {% endfor %}
+        <br/>
+
+        <h3> total de horas extras:{{object.total_horas_extra}} </h3 >
+
 {%endblock%}
